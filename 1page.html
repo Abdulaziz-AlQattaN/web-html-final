@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Page1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 90vh;
+        overflow: hidden;
+        background-color: lightblue;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        font-family: "Cairo", sans-serif;
+      }
+      .image {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      }
+      .image img {
+        border-radius: 40%;
+        width: 100px;
+      }
+      .text {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+      }
+      .text h1 {
+        font-size: 55px;
+        font-weight: bold;
+        text-decoration: overline;
+        border: 5px solid black;
+        margin-top: 10px;
+      }
+      .para {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+      }
+      .para p {
+        font-size: 17px;
+        border: 1px solid black;
+        padding: 4px;
+      }
+      .list {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        margin-top: 20px;
+        top: 50%;
+        left: 25%;
+      }
+      a:link {
+        text-decoration: none;
+        background-color: wheat;
+      }
+      a:visited {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div data-aos="fade-up">
+        <div class="image"><img src="Screenshot_3.png" alt="" /></div>
+      </div>
+
+      <div data-aos="fade-right">
+        <div class="text"><h1>استاذه موضي البناي</h1></div>
+      </div>
+      <div data-aos="fade-left">
+        <div class="para">
+          <p>
+            . و غيرها وتصنف من اقوى اساتذة البرمجة في الكويت C++ , Java , Python
+            استاذه موضي هي مدرسة في منصة الكويت تبرمج ولديها خبره في اكثر من لغه
+          </p>
+        </div>
+      </div>
+      <div data-aos="zoom-in">
+        <div class="list">
+          <ul>
+            <a href="2page.html"><li>طلاب موضي البناي</li></a>
+            <a href="3page.html"><li>طالبات موضي البناي</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
